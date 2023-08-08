@@ -1,0 +1,44 @@
+.container {
+    text-align: center;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.restart {
+    display: block;
+    margin: 0 auto;
+}
+
+.cardWrapper {
+    width: 80%;
+    margin: 0 auto;
+    border: 10px solid green;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.card {
+    width: 45%;
+    min-height: 200px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+    color: blueviolet;
+    transform: rotate3d(0, 1, 0, 180deg);
+    font-size: 0;
+    cursor: pointer;
+    transition: transform 1s ease-in-out, font-size 0.3s ease-in-out;
+}
+
+.card-over {
+    font-size: 40px;
+    transform: none;
+    background-color: red;
+}
